@@ -72,6 +72,8 @@ The app supports the following trading strategies, each implemented in its respe
 - Relative Strength Index (RSI)
 - Simple Moving Averages (SMA)
 - Stochastic Oscillator (SO)
+- Fibonacci (coming soon)
+- Price Action (coming soon)
 - Custom (coming soon)
 
 ## Customization
