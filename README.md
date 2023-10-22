@@ -1,4 +1,4 @@
-# Technical Analysis Backtesting App
+# Technical Analysis Backtesting Module
 
 The Technical Analysis Backtesting App is a Python-based tool designed to help you backtest and evaluate the performance of trading strategies using various technical indicators. This tool supports several technical indicators, such as Bollinger Bands (BB), Exponential Moving Averages (EMA), Moving Average Convergence Divergence (MACD), Relative Strength Index (RSI), Simple Moving Averages (SMA), and Stochastic Oscillator (SO). In the future I will be adding multiple custom strategies, along with price action based backtesting.
 
