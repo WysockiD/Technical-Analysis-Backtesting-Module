@@ -4,6 +4,7 @@ import MACDBacktester
 import RSIBacktester
 import SMABacktester
 import SOBacktester
+import FibonacciBacktester
 
 class Backtester:
     ''' Class for the vectorized backtesting of trading strategies.
@@ -92,6 +93,7 @@ class Backtester:
             "RSI": lambda: RSIBacktester.RSIBacktester(self.symbol, self.options["RSI_periods"], self.options["RSI_upper"], self.options["RSI_lower"], self.start, self.end, self.granularity, self.options["TC"]),
             "SMA": lambda: SMABacktester.SMABacktester(self.symbol, self.options["SMA_S"], self.options["SMA_L"], self.start, self.end, self.granularity, self.options["TC"]),
             "SO": lambda: SOBacktester.SOBacktester(self.symbol, self.options["SO_periods"], self.options["SO_D_mw"], self.start, self.end, self.granularity, self.options["TC"]),
+            "FIB": lambda: FibonacciBacktester.FibonacciBacktester(self.symbol, self.start, self.end, self.granularity),
         }
         self.data = switch[strategy]().data
     
